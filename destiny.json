@@ -1,0 +1,36 @@
+{
+    "descriptor": [
+        "A tiny",
+        "A smelly",
+        "A disgusting",
+        "A rotting",
+	      "An evil"
+    ],
+    "subject": [
+        "Edge Transit",
+        "Gun named Jeff",
+        "Sword of omens",
+        "Fist"
+    ],
+    "action": [
+        "that is on fire",
+        "that shoots edge transits",
+        "that stole your money",
+        "that loved you once",
+	      "that drips an inky black fluid that looks like it's filled with stars",
+        "that is always watching you"
+    ],
+    "conjunction": [
+        "and",
+        "but,",
+        "yet,",
+        "until",
+        "because",
+        "so"
+    ],
+    "punctuation": [
+        "!",
+        ".",
+        "?"
+    ]
+}
