@@ -6,6 +6,7 @@ from keep_alive import keep_alive
 
 bot = commands.Bot(command_prefix='!')
 bot.load_extension("cogs.fate")
+bot.load_extension("cogs.toys")
 
 @bot.event
 async def on_ready():
