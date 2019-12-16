@@ -1,5 +1,5 @@
 from discord.ext import commands
-import jsonpickle, os, sys, random, discord
+import jsonpickle, random, discord
 
 class WordSalad(commands.Cog):
     def __init__(self, bot):
@@ -40,7 +40,7 @@ class WordSalad(commands.Cog):
         """Generate some crazytalk."""
         subject = "wordsalad"
         embed = discord.Embed(title="The bot says:", colour=discord.Colour(0x4a90e2), description=self.randomClause(subject))
-        embed.set_thumbnail(url="https://github.com/miguelp001/discord-bot/raw/master/gir.png")
+        embed.set_thumbnail(url="https://raw.githubusercontent.com/miguelp001/discord-bot/master/roberto.webp")
 
         await ctx.send(embed=embed)
     
@@ -53,7 +53,7 @@ class WordSalad(commands.Cog):
             crazy = crazy + " " + self.randomClause(subject)
         
         embed = discord.Embed(title="The bot takes a deep breath to say:", colour=discord.Colour(0x4a90e2), description=crazy)
-        embed.set_thumbnail(url="https://github.com/miguelp001/discord-bot/raw/master/gir.png")
+        embed.set_thumbnail(url="https://raw.githubusercontent.com/miguelp001/discord-bot/master/roberto.webp")
 
         await ctx.send(embed=embed)
 

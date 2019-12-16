@@ -1,0 +1,53 @@
+server ID: {
+  "funds": 100,
+  "level": 1,
+  "modifiers": {
+    "High Morale": (
+      "Everyone is in good spirits",
+      progress * 2,
+      10 hours
+  },
+  "Facilities": (vault, laboratory, workshop, core, laundry, cafe),
+  "unassigned researchers": (bobby, joey, sally, corey, lacy),
+  "unassigned agents": (blake, jake, drake),
+  "unassigned admin": (valentine),
+  "unassinged support": (tom, thom, dom),
+  Users: {
+    Player ID: {
+      "XP": 0,
+      "Class": "Researcher",
+      "Level": 1,
+      "Project": {
+        "Name": "eating cheerios",
+        "thumb": <file URL>,
+        "Type": "study",
+        "progress": .86,
+        "Description": "This is about checking all the different types of cheerios.",
+        "Reward": {"xp": 20, "cellxp": 10},
+        "Requirement": {
+          "assigned engineer": ("joe",""),
+          "assigned researcher": (algermin),
+          "funds": 2000
+          }
+      }
+      Character ID: {
+        "thumb": <file URL>,
+        Skills: {
+          "Athletics": 3,
+          "Strength": 2,
+          "Willpower": 2
+        },
+        Aspects: (
+          "My core concept",
+          "Some kind of issue",
+          "A third aspect,
+        ),
+        Stunts: {
+          "Some cool name": "some cool stuff"
+        }
+      }
+    },
+    Player ID: {...
+    }
+  }
+}

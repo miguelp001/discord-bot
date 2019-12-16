@@ -15,15 +15,5 @@ class Fate(commands.Cog):
             await ctx.send('Format has to be in NdN!')
             return
 
-    #@commands.command()
-    #async def newChar(self, ctx, name):
-    #    """A command to create a new character."""
-    #    try:
-    #      player.makeCharacter(ctx, name)
-    #      await ctx.send("New character " + name + " successfully created.")
-    #    except exception:
-    #      await ctx.send("i dun goofed!")
-    #      return
-
 def setup(bot):
     bot.add_cog(Fate(bot))
