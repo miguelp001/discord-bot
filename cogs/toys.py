@@ -56,6 +56,21 @@ class WordSalad(commands.Cog):
         embed.set_thumbnail(url="https://raw.githubusercontent.com/miguelp001/discord-bot/master/roberto.webp")
 
         await ctx.send(embed=embed)
+    
+    @commands.command()
+    async def xnntop(self, ctx):
+        """Generate News Headlines from Elysee."""
+        subject = "elysee"
+        
+        embed = discord.Embed(title="Today's Top News:", description=self.randomClause(subject), color=0x7c2222)
+        embed.set_author(name="XNN")
+        
+        embed.add_field(name="Local Headline:", value=self.randomClause(subject))
+        embed.add_field(name="Across the Networks:", value=self.randomClause(subject))
+        embed.set_footer(text="We tell you what to believe.")
+        embed.set_thumbnail(url="https://raw.githubusercontent.com/miguelp001/discord-bot/master/gir.png")
+
+        await ctx.send(embed=embed)
 
 def setup(bot):
     bot.add_cog(WordSalad(bot))
