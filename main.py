@@ -2,8 +2,6 @@ import discord
 from discord.ext import commands
 import os
 
-from keep_alive import keep_alive
-
 bot = commands.Bot(command_prefix='!')
 bot.load_extension("cogs.fate")
 bot.load_extension("cogs.toys")
@@ -33,6 +31,5 @@ async def _bot(ctx):
     """Is the bot cool?"""
     await ctx.send('Yes, the bot is cool.')
 
-keep_alive()
 token = os.environ.get("DISCORD_BOT_SECRET")
 bot.run(token)
